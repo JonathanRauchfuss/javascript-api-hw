@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: floralwhite;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.artwork {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.artwork img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    
+}
+
+
+.artwork h2 {
+    margin: 0;
+    font-size: 1.2rem;    
+}
+
+.artwork p {
+    margin: 0;
+    font-style: italic;
+}
+
+
+
+
+.artwork img.enlarged {
+    max-width: 90%;
+    max-height: 90%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    border: 5px solid white; /* Optional: Add a border for better visibility */
+}
